@@ -1,0 +1,426 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5/"
+     xml:base="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-5="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#AFECTA -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#AFECTA">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#ES_AFECTADO_POR"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#AMENAZA"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#ACTIVO"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#ES_AFECTADO_POR -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#ES_AFECTADO_POR"/>
+    
+
+
+    <!-- http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#ES_MITIGADO_POR -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#ES_MITIGADO_POR">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#MITIGAR"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#ES_REQUERIDO_POR -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#ES_REQUERIDO_POR">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#REQUIERE"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#MITIGAR -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#MITIGAR">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#CONTROL"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#AMENAZA"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#REQUIERE -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#REQUIERE">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#POLITICA"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#CONTROL"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#CRITICIDAD -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#CRITICIDAD">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#ACTIVO"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#FECHA_DETECCION -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#FECHA_DETECCION">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#VULNERABILIDAD"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#NIVEL_RIESGO -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#NIVEL_RIESGO">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#AMENAZA"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#ACCESO -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#ACCESO">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#POLITICA"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#ACTIVO -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#ACTIVO"/>
+    
+
+
+    <!-- http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#AMENAZA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#AMENAZA"/>
+    
+
+
+    <!-- http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#BACKUP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#BACKUP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#POLITICA"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#CIFRADO -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#CIFRADO">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#CONTROL"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#CONTROL -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#CONTROL"/>
+    
+
+
+    <!-- http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#FALTA_PARCHES -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#FALTA_PARCHES">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#VULNERABILIDAD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#FIREWALL -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#FIREWALL">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#CONTROL"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#HARDWARE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#HARDWARE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#ACTIVO"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#INFORMACION -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#INFORMACION">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#ACTIVO"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#REQUIERE"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#POLITICA"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#INYECCION_SQL -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#INYECCION_SQL">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#VULNERABILIDAD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#MALA_CONFIG -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#MALA_CONFIG">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#VULNERABILIDAD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#MALWARE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#MALWARE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#AMENAZA"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#MFA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#MFA">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#CONTROL"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#PHISHING -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#PHISHING">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#AMENAZA"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#POLITICA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#POLITICA"/>
+    
+
+
+    <!-- http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#PRIVACIDAD -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#PRIVACIDAD">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#POLITICA"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#ROBO_DATOS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#ROBO_DATOS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#AMENAZA"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#SOFTWARE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#SOFTWARE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#ACTIVO"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#VULNERABILIDAD -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#VULNERABILIDAD"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#APP_TURBOPITS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#APP_TURBOPITS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#SOFTWARE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#ATAQUE_SATURACION -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#ATAQUE_SATURACION">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#ROBO_DATOS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#AUTENTICADOR_GOOGLE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#AUTENTICADOR_GOOGLE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#MFA"/>
+        <untitled-ontology-5:MITIGAR rdf:resource="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#PHISHING_STAFF_TURBOPITS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#AVISO_LEGAL -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#AVISO_LEGAL">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#PRIVACIDAD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#BASE_DATOS_PILOTOS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#BASE_DATOS_PILOTOS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#INFORMACION"/>
+        <untitled-ontology-5:CRITICIDAD rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"></untitled-ontology-5:CRITICIDAD>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#CERTIFICADO_SSL -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#CERTIFICADO_SSL">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#CIFRADO"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#COPIA_SEGURIDAD_SEMANAL -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#COPIA_SEGURIDAD_SEMANAL">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#BACKUP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#FALLO_VALIDACION_LOGIN -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#FALLO_VALIDACION_LOGIN">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#INYECCION_SQL"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#FIREWALL_PALOALTO -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#FIREWALL_PALOALTO">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#FIREWALL"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#PHISHING_CORPORATIVO -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#PHISHING_CORPORATIVO"/>
+    
+
+
+    <!-- http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#PHISHING_STAFF_TURBOPITS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#PHISHING_STAFF_TURBOPITS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#PHISHING"/>
+        <untitled-ontology-5:AFECTA rdf:resource="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#BASE_DATOS_PILOTOS"/>
+        <untitled-ontology-5:NIVEL_RIESGO rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"></untitled-ontology-5:NIVEL_RIESGO>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#PUERTO_80_ABIERTO -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#PUERTO_80_ABIERTO">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#MALA_CONFIG"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#REGLA_SOLO_ADMINISTRADORES -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#REGLA_SOLO_ADMINISTRADORES">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#ACCESO"/>
+        <untitled-ontology-5:REQUIERE rdf:resource="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#AUTENTICADOR_GOOGLE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#SERVIDOR_FISICO -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#SERVIDOR_FISICO">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#HARDWARE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#WANNACRY_RANSOMWARE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#WANNACRY_RANSOMWARE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#MALWARE"/>
+        <untitled-ontology-5:AFECTA rdf:resource="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#SERVIDOR_FISICO"/>
+        <untitled-ontology-5:NIVEL_RIESGO rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"></untitled-ontology-5:NIVEL_RIESGO>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#WINDOWS_SIN_ACTUALIZAR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#WINDOWS_SIN_ACTUALIZAR">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darkin/ontologies/2026/3/untitled-ontology-5#FALTA_PARCHES"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
