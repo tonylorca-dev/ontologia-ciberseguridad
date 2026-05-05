@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/antonio/ontologies/2026/ciberseguridad#"
+     xml:base="http://www.semanticweb.org/antonio/ontologies/2026/ciberseguridad"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+
+    <owl:Ontology rdf:about="http://www.semanticweb.org/antonio/ontologies/2026/ciberseguridad"/>
+
+    <!-- PROPIEDADES DE OBJETO E INVERSAS -->
+    <owl:ObjectProperty rdf:about="#AFECTA"><owl:inverseOf rdf:resource="#ES_AFECTADO_POR"/></owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="#ES_AFECTADO_POR"/>
+
+    <owl:ObjectProperty rdf:about="#EXPLOTAR"><owl:inverseOf rdf:resource="#ES_EXPLOTADO_POR"/></owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="#ES_EXPLOTADO_POR"/>
+
+    <owl:ObjectProperty rdf:about="#MITIGAR"><owl:inverseOf rdf:resource="#ES_MITIGADO_POR"/></owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="#ES_MITIGADO_POR"/>
+
+    <owl:ObjectProperty rdf:about="#REQUIERE"><owl:inverseOf rdf:resource="#ES_REQUERIDO_POR"/></owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="#ES_REQUERIDO_POR"/>
+
+    <!-- CLASES -->
+    <owl:Class rdf:about="#ACTIVO"/><owl:Class rdf:about="#AMENAZA"/><owl:Class rdf:about="#CONTROL"/><owl:Class rdf:about="#POLITICA"/><owl:Class rdf:about="#VULNERABILIDAD"/>
+
+    <!-- INDIVIDUOS CONECTADOS (EJEMPLO DE CADENA 1) -->
+    <owl:NamedIndividual rdf:about="#Normativa_ISO27001"><rdf:type rdf:resource="#POLITICA"/><REQUIERE rdf:resource="#Firewall_Perimetral"/></owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Firewall_Perimetral"><rdf:type rdf:resource="#CONTROL"/><MITIGAR rdf:resource="#Ataque_DDoS_Saturacion"/></owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Ataque_DDoS_Saturacion"><rdf:type rdf:resource="#AMENAZA"/><EXPLOTAR rdf:resource="#Puerto_80_Abierto"/><AFECTA rdf:resource="#Servidor_Web_TurboPits"/></owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Puerto_80_Abierto"><rdf:type rdf:resource="#VULNERABILIDAD"/></owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Servidor_Web_TurboPits"><rdf:type rdf:resource="#ACTIVO"/></owl:NamedIndividual>
+
+    <!-- CADENA 2: PROTECCIÓN DE DATOS -->
+    <owl:NamedIndividual rdf:about="#Estandar_Cifrado_Datos"><rdf:type rdf:resource="#POLITICA"/><REQUIERE rdf:resource="#Cifrado_AES_256"/></owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Cifrado_AES_256"><rdf:type rdf:resource="#CONTROL"/><MITIGAR rdf:resource="#Inyeccion_SQL_API"/></owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Inyeccion_SQL_API"><rdf:type rdf:resource="#AMENAZA"/><EXPLOTAR rdf:resource="#Entrada_No_Validada"/><AFECTA rdf:resource="#Base_Datos_Tiempos"/></owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Entrada_No_Validada"><rdf:type rdf:resource="#VULNERABILIDAD"/></owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Base_Datos_Tiempos"><rdf:type rdf:resource="#ACTIVO"/></owl:NamedIndividual>
+
+    <!-- INDIVIDUOS ADICIONALES PARA COMPLETAR LOS 20 -->
+    <owl:NamedIndividual rdf:about="#App_Android_Pilotos"><rdf:type rdf:resource="#ACTIVO"/></owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Laptop_Ingenieria"><rdf:type rdf:resource="#ACTIVO"/></owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Ransomware_WannaCry"><rdf:type rdf:resource="#AMENAZA"/></owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Phishing_Credenciales"><rdf:type rdf:resource="#AMENAZA"/></owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#MFA_Google_Auth"><rdf:type rdf:resource="#CONTROL"/></owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Backup_Cifrado_Nube"><rdf:type rdf:resource="#CONTROL"/></owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Manual_Acceso_Remoto"><rdf:type rdf:resource="#POLITICA"/></owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Plan_Continuidad_Negocio"><rdf:type rdf:resource="#POLITICA"/></owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Sistema_Sin_Parches"><rdf:type rdf:resource="#VULNERABILIDAD"/></owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Falta_MFA_Login"><rdf:type rdf:resource="#VULNERABILIDAD"/></owl:NamedIndividual>
+</rdf:RDF>
