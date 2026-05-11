@@ -1,103 +1,107 @@
-
 [
   {
     "libro": "El_Nombre_del_Viento",
     "autor": "Patrick_Rothfuss",
-    "genero": "Fantasia"
+    "genero": "Fantasia",
+    "anio_publicacion": 2007,
+    "rating": 5
   },
   {
     "libro": "El_Temor_De_Un_Hombre_Sabio",
     "autor": "Patrick_Rothfuss",
-    "genero": "Fantasia"
+    "genero": "Fantasia",
+    "anio_publicacion": 2011,
+    "rating": 5
   },
   {
     "libro": "El_Hobbit",
     "autor": "JRR_Tolkien",
-    "genero": "Fantasia"
+    "genero": "Fantasia",
+    "anio_publicacion": 1937,
+    "rating": 5
   },
   {
     "libro": "El_Senor_De_Los_Anillos",
     "autor": "JRR_Tolkien",
-    "genero": "Fantasia"
+    "genero": "Fantasia",
+    "anio_publicacion": 1954,
+    "rating": 5
   },
   {
     "libro": "Harry_Potter_Y_La_Piedra_Filosofal",
     "autor": "JK_Rowling",
-    "genero": "Fantasia"
+    "genero": "Fantasia",
+    "anio_publicacion": 1997,
+    "rating": 5
   },
   {
     "libro": "Dune",
     "autor": "Frank_Herbert",
-    "genero": "Ciencia_Ficcion"
+    "genero": "Ciencia_Ficcion",
+    "anio_publicacion": 1965,
+    "rating": 5
   },
   {
     "libro": "Fundacion",
     "autor": "Isaac_Asimov",
-    "genero": "Ciencia_Ficcion"
+    "genero": "Ciencia_Ficcion",
+    "anio_publicacion": 1951,
+    "rating": 4
   },
   {
     "libro": "Neuromante",
     "autor": "William_Gibson",
-    "genero": "Ciencia_Ficcion"
+    "genero": "Ciencia_Ficcion",
+    "anio_publicacion": 1984,
+    "rating": 4
   },
   {
     "libro": "Dracula",
     "autor": "Bram_Stoker",
-    "genero": "Terror"
+    "genero": "Terror",
+    "anio_publicacion": 1897,
+    "rating": 5
   },
   {
     "libro": "It",
     "autor": "Stephen_King",
-    "genero": "Terror"
+    "genero": "Terror",
+    "anio_publicacion": 1986,
+    "rating": 5
   },
   {
     "libro": "Frankenstein",
     "autor": "Mary_Shelley",
-    "genero": "Terror"
+    "genero": "Terror",
+    "anio_publicacion": 1818,
+    "rating": 5
   },
   {
     "libro": "Orgullo_Y_Prejuicio",
     "autor": "Jane_Austen",
-    "genero": "Romance"
+    "genero": "Romance",
+    "anio_publicacion": 1813,
+    "rating": 4
   },
   {
     "libro": "Cien_Anos_De_Soledad",
     "autor": "Gabriel_Garcia_Marquez",
-    "genero": "Realismo_Magico"
-  },
-  {
-    "libro": "Don_Quijote_De_La_Mancha",
-    "autor": "Miguel_De_Cervantes",
-    "genero": "Clasico"
-  },
-  {
-    "libro": "Los_Juegos_Del_Hambre",
-    "autor": "Suzanne_Collins",
-    "genero": "Distopia"
+    "genero": "Realismo_Magico",
+    "anio_publicacion": 1967,
+    "rating": 5
   },
   {
     "libro": "1984",
     "autor": "George_Orwell",
-    "genero": "Distopia"
-  },
-  {
-    "libro": "Un_Mundo_Feliz",
-    "autor": "Aldous_Huxley",
-    "genero": "Distopia"
-  },
-  {
-    "libro": "La_Maquina_Del_Tiempo",
-    "autor": "HG_Wells",
-    "genero": "Ciencia_Ficcion"
+    "genero": "Distopia",
+    "anio_publicacion": 1949,
+    "rating": 5
   },
   {
     "libro": "Sherlock_Holmes_Estudio_En_Escarlata",
     "autor": "Arthur_Conan_Doyle",
-    "genero": "Misterio"
-  },
-  {
-    "libro": "La_Chica_Del_Tren",
-    "autor": "Paula_Hawkins",
-    "genero": "Suspenso"
+    "genero": "Misterio",
+    "anio_publicacion": 1887,
+    "rating": 4
   }
 ]
