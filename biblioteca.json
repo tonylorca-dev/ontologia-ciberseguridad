@@ -1,0 +1,103 @@
+
+[
+  {
+    "libro": "El_Nombre_del_Viento",
+    "autor": "Patrick_Rothfuss",
+    "genero": "Fantasia"
+  },
+  {
+    "libro": "El_Temor_De_Un_Hombre_Sabio",
+    "autor": "Patrick_Rothfuss",
+    "genero": "Fantasia"
+  },
+  {
+    "libro": "El_Hobbit",
+    "autor": "JRR_Tolkien",
+    "genero": "Fantasia"
+  },
+  {
+    "libro": "El_Senor_De_Los_Anillos",
+    "autor": "JRR_Tolkien",
+    "genero": "Fantasia"
+  },
+  {
+    "libro": "Harry_Potter_Y_La_Piedra_Filosofal",
+    "autor": "JK_Rowling",
+    "genero": "Fantasia"
+  },
+  {
+    "libro": "Dune",
+    "autor": "Frank_Herbert",
+    "genero": "Ciencia_Ficcion"
+  },
+  {
+    "libro": "Fundacion",
+    "autor": "Isaac_Asimov",
+    "genero": "Ciencia_Ficcion"
+  },
+  {
+    "libro": "Neuromante",
+    "autor": "William_Gibson",
+    "genero": "Ciencia_Ficcion"
+  },
+  {
+    "libro": "Dracula",
+    "autor": "Bram_Stoker",
+    "genero": "Terror"
+  },
+  {
+    "libro": "It",
+    "autor": "Stephen_King",
+    "genero": "Terror"
+  },
+  {
+    "libro": "Frankenstein",
+    "autor": "Mary_Shelley",
+    "genero": "Terror"
+  },
+  {
+    "libro": "Orgullo_Y_Prejuicio",
+    "autor": "Jane_Austen",
+    "genero": "Romance"
+  },
+  {
+    "libro": "Cien_Anos_De_Soledad",
+    "autor": "Gabriel_Garcia_Marquez",
+    "genero": "Realismo_Magico"
+  },
+  {
+    "libro": "Don_Quijote_De_La_Mancha",
+    "autor": "Miguel_De_Cervantes",
+    "genero": "Clasico"
+  },
+  {
+    "libro": "Los_Juegos_Del_Hambre",
+    "autor": "Suzanne_Collins",
+    "genero": "Distopia"
+  },
+  {
+    "libro": "1984",
+    "autor": "George_Orwell",
+    "genero": "Distopia"
+  },
+  {
+    "libro": "Un_Mundo_Feliz",
+    "autor": "Aldous_Huxley",
+    "genero": "Distopia"
+  },
+  {
+    "libro": "La_Maquina_Del_Tiempo",
+    "autor": "HG_Wells",
+    "genero": "Ciencia_Ficcion"
+  },
+  {
+    "libro": "Sherlock_Holmes_Estudio_En_Escarlata",
+    "autor": "Arthur_Conan_Doyle",
+    "genero": "Misterio"
+  },
+  {
+    "libro": "La_Chica_Del_Tren",
+    "autor": "Paula_Hawkins",
+    "genero": "Suspenso"
+  }
+]
